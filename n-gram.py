@@ -18,7 +18,7 @@ class Bigram:
     Reads in text file as corpus. Methods: generate_n_words based on input word and bigrams
     """
     def __init__(self, file: str) -> None:
-        self.corpus = self._read_in_corpus(file)
+        self.corpus = self._read_corpus(file)
         self.words = self._extract_words_from_corpus()
         self.bigrams = self._calculate_probabilities()
 
